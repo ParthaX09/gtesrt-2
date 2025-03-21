@@ -12,3 +12,11 @@ class HomePage:
         btn.click()
 
 
+    def click_more(self):
+        pass
+
+
+    def click_trash(self):
+        pass
+
+

@@ -17,7 +17,9 @@ class SentPage:
         id = None
         for id in ids:
             if "me" in id.text:
+                id.click()
                 break
-        else:
-            print("Mail not found")
+        assert "Python" in id.text, "No mail sent"
+
+
 

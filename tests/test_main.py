@@ -38,8 +38,14 @@ class Test_Main(BaseClass):
         homePage = HomePage(self.driver)
         sentPage = SentPage(self.driver)
         homePage.click_sent()
-
         sentPage.check_pageOpen()
+        sentPage.check_mail()
+
+
+    def test_trash(self):
+        homePage = HomePage(self.driver)
+        homePage.click_more()
+        homePage.click_trash()
 
 
 
