@@ -5,6 +5,7 @@ from pageObjects.ComposePage import ComposePage
 from pageObjects.HomePage import HomePage
 from pageObjects.LoginPage import LoginPage
 from pageObjects.SentPage import SentPage
+from pageObjects.TrashPage import TrashPage
 from utilities.BaseClass import BaseClass
 
 
@@ -46,6 +47,9 @@ class Test_Main(BaseClass):
         homePage = HomePage(self.driver)
         homePage.click_more()
         homePage.click_trash()
+
+        trashPage = TrashPage(self.driver)
+        trashPage.isTrashOpen()
 
 
 

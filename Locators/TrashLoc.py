@@ -1,2 +1,5 @@
+from selenium.webdriver.common.by import By
+
+
 class TrashLoc:
-    pass
+    trashText = (By.XPATH, "//div[contains(text(),'Messages')]")

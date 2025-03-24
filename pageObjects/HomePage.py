@@ -13,10 +13,14 @@ class HomePage:
 
 
     def click_more(self):
-        pass
+        btn = Wait.ec(self.driver, HomeLoc.more)
+        assert btn.is_displayed(), "Button not displayed"
+        btn.click()
 
 
     def click_trash(self):
-        pass
+        btn = Wait.ec(self.driver, HomeLoc.trash)
+        assert btn.is_displayed(), "Trash not visible"
+        btn.click()
 
 
